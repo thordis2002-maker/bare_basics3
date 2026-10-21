@@ -1,0 +1,490 @@
+/* --------------------
+   GENERAL
+-------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  background-color: #ead8d0;
+  color: #4a3030;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+
+.header {
+  background-color: #ead8d0;
+  min-height: 85px;
+  padding: 20px 3%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation a {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #9c6d78;
+}
+
+/* --------------------
+   HERO IMAGE
+-------------------- */
+
+.face-hero {
+  height: 500px;
+
+  background-image: url("./face.hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face-hero h1 {
+  font-size: 70px;
+  font-weight: 400;
+  color: #4a3030;
+}
+
+/* --------------------
+   PRODUCT SECTION
+-------------------- */
+
+.face-content {
+  background-color: #ead8d0;
+  padding: 15px 6%;
+}
+
+.product-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 90px;
+  row-gap: 30px;
+
+  justify-items: center;
+}
+
+/* --------------------
+   PRODUCT CARDS
+-------------------- */
+
+.product-card {
+  width: 100%;
+  max-width: 230px;
+  min-height: 310px;
+
+  background-color: #591b26;
+  color: #fff7f5;
+
+  border-radius: 22px;
+  padding: 13px;
+
+  position: relative;
+}
+
+/* --------------------
+   PRODUCT IMAGES
+-------------------- */
+
+.product-image {
+  width: 100%;
+  height: 150px;
+
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* --------------------
+   PRODUCT DESCRIPTIONS
+-------------------- */
+
+.product-description {
+  padding-top: 10px;
+}
+
+.product-description h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.product-description p {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+/* --------------------
+   TUTORIAL SECTION
+-------------------- */
+
+.tutorial {
+  background-color: #591b26;
+  color: #fff7f5;
+
+  min-height: 210px;
+  padding: 15px 5%;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+
+  position: relative;
+}
+
+.tutorial-image {
+  width: 250px;
+  height: 180px;
+  flex-shrink: 0;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.tutorial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background-color: #591b26;
+  color: white;
+
+  padding: 14px 18px;
+  font-size: 25px;
+}
+
+.tutorial-text {
+  padding-top: 5px;
+}
+
+.tutorial-text h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.tutorial-text p {
+  font-size: 16px;
+}
+
+.tutorial-button {
+  display: inline-block;
+
+  background-color: #ead8d0;
+  color: #591b26;
+
+  padding: 16px 30px;
+  border-radius: 20px;
+
+  font-size: 22px;
+  margin-top: 20px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tutorial-button:hover {
+  background-color: #f7dce2;
+}
+
+/* --------------------
+   NEXT UP BUTTON
+-------------------- */
+
+.next-container {
+  margin-left: auto;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+
+.next-button {
+  display: inline-block;
+
+  background-color: #ead8d0;
+  color: #591b26;
+
+  padding: 20px 12px;
+  border-radius: 22px;
+
+  font-size: 21px;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.next-button:hover {
+  background-color: #f7dce2;
+  transform: translateY(-4px);
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+.footer {
+  background-color: #ead8d0;
+
+  min-height: 160px;
+  padding: 35px 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-brand a {
+  font-size: 30px;
+  color: #591b26;
+}
+
+.footer-brand p {
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-nav a {
+  font-size: 16px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  color: #591b26;
+  font-size: 34px;
+}
+
+.socials a:hover {
+  opacity: 0.6;
+}
+
+.copyright {
+  background-color: #ead8d0;
+  border-top: 1px solid #b58f95;
+  padding: 8px 3%;
+
+  font-size: 12px;
+}
+
+/* --------------------
+   TABLET
+-------------------- */
+
+@media (max-width: 1000px) {
+  .product-grid {
+    column-gap: 55px;
+  }
+
+  .product-card {
+    max-width: 200px;
+  }
+
+  .tutorial {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* --------------------
+   MOBILE
+-------------------- */
+
+@media (max-width: 700px) {
+  /* HEADER */
+
+  .header {
+    padding: 20px 15px;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navigation {
+    gap: 12px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+  }
+
+  /* HERO */
+
+  .face-hero {
+    height: 280px;
+    background-position: center;
+  }
+
+  .face-hero h1 {
+    font-size: 52px;
+  }
+
+  /* PRODUCT SECTION */
+
+  .face-content {
+    padding: 25px 18px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+
+  /* PRODUCT CARDS */
+
+  .product-card {
+    width: 100%;
+    max-width: none;
+    min-height: 290px;
+    padding: 9px;
+  }
+
+  .product-image {
+    height: 125px;
+    border-radius: 15px;
+  }
+
+  .product-description h2 {
+    font-size: 17px;
+  }
+
+  .product-description p {
+    font-size: 12px;
+  }
+
+  /* TUTORIAL */
+
+  .tutorial {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+    gap: 20px;
+  }
+
+  .tutorial-image {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+  }
+
+  .tutorial-text {
+    text-align: center;
+  }
+
+  .tutorial-text h2 {
+    font-size: 25px;
+  }
+
+  .tutorial-button {
+    font-size: 18px;
+    padding: 15px 22px;
+  }
+
+  /* NEXT BUTTON */
+
+  .next-container {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  .next-button {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 15px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}

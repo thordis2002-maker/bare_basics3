@@ -1,0 +1,425 @@
+/* --------------------
+   GENERAL
+-------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  color: #4a3030;
+  background-color: #fff7f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+
+.header {
+  background-color: #fff7f5;
+  min-height: 85px;
+  padding: 20px 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation a {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #a77c85;
+}
+
+/* --------------------
+   SKIN PREP MAIN PAGE
+   BACKGROUND IMAGE
+-------------------- */
+
+.skin-page {
+  min-height: 1250px;
+
+  /* Your skincare background image */
+  background-image: url("./skincare.jpg");
+
+  /* Fill the entire main section */
+  background-size: cover;
+
+  /* Keep the image centered */
+  background-position: center;
+
+  /* Prevent repeating */
+  background-repeat: no-repeat;
+
+  padding: 20px 3% 30px;
+}
+
+/* --------------------
+   INTRODUCTION BOX
+-------------------- */
+
+.intro {
+  width: 49%;
+  max-width: 600px;
+
+  background-color: #b39499;
+  border-radius: 22px;
+
+  padding: 18px 15px 30px;
+  margin-bottom: 22px;
+}
+
+.intro h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.intro p {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+/* --------------------
+   SKINCARE STEPS
+-------------------- */
+
+.skincare-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 80%;
+}
+
+/* --------------------
+   SKINCARE CARDS
+-------------------- */
+
+.skincare-card {
+  background-color: #591b26;
+  color: #fff7f5;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 125px;
+  padding: 7px 12px;
+  gap: 12px;
+}
+
+/* --------------------
+   PRODUCT IMAGES
+-------------------- */
+
+.product-image {
+  position: relative;
+
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 85%;
+  height: 95%;
+  object-fit: contain;
+}
+
+/* PRODUCT NUMBERS */
+
+.number {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+
+  font-size: 20px;
+  color: #591b26;
+  z-index: 1;
+}
+
+/* --------------------
+   PRODUCT TEXT
+-------------------- */
+
+.product-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-text h2 {
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.product-text p {
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+/* --------------------
+   NEXT UP BUTTON
+-------------------- */
+
+.next-container {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 0;
+  padding: 0 0 0 20px;
+}
+
+.next-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 80px;
+
+  background-color: #651a24;
+  color: #fff7f5;
+
+  padding: 20px 15px;
+  border-radius: 35px;
+
+  font-size: 19px;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #8a3440;
+  transform: translateY(-4px);
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+.footer {
+  background-color: #fff7f5;
+
+  min-height: 160px;
+  padding: 35px 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-brand a {
+  font-size: 30px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-nav a {
+  font-size: 16px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  color: #591b26;
+  font-size: 34px;
+}
+
+.socials a:hover {
+  opacity: 0.6;
+}
+
+/* Your Next Up button is already inside
+   the main section, so hide the duplicate
+   button inside the footer. */
+
+.footer > .next-button {
+  display: none;
+}
+
+/* --------------------
+   TABLET
+-------------------- */
+
+@media (max-width: 1000px) {
+  .intro {
+    width: 65%;
+  }
+
+  .skincare-steps {
+    width: 90%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* --------------------
+   MOBILE
+-------------------- */
+
+@media (max-width: 700px) {
+  /* HEADER */
+
+  .header {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .navigation {
+    gap: 14px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+  }
+
+  /* BACKGROUND IMAGE */
+
+  .skin-page {
+    min-height: auto;
+    padding: 20px 15px 30px;
+
+    background-image: url("./skincare.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* INTRODUCTION */
+
+  .intro {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+  }
+
+  .intro p {
+    font-size: 19px;
+  }
+
+  /* SKINCARE STEPS */
+
+  .skincare-steps {
+    width: 100%;
+    gap: 18px;
+  }
+
+  /* PRODUCT CARDS */
+
+  .skincare-card {
+    padding: 10px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .product-image {
+    width: 85px;
+    height: 100px;
+    border-radius: 15px;
+  }
+
+  .product-text h2 {
+    font-size: 25px;
+  }
+
+  .product-text p {
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  /* NEXT UP BUTTON */
+
+  .next-container {
+    margin-top: 30px;
+  }
+
+  .next-button {
+    font-size: 17px;
+    min-height: 65px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 15px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}

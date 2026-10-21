@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bare Basics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* HERO BACKGROUND IMAGE */
+        .hero {
+            background-image: url("./hero.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* TRANSPARENT BOX BEHIND HERO TEXT */
+        .hero-text {
+            background-color: rgba(255, 248, 247, 0.88);
+            padding: 35px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Makeup doesn’t have to be complicated.</h1>
+            <p>Learn at your own pace, one step at a time.</p>
+
+            <a href="#categories" class="button">
+                START LEARNING →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="categories">
+
+        <h2>Want to learn more?</h2>
+        <p class="subtitle">Start with the basics.</p>
+
+        <div class="category-grid">
+
+            <!-- SKIN PREP -->
+            <a href="skinprep.html" class="category-card">
+                <div class="category-image">
+                    <img src="./rhode.png" alt="Skin prep">
+                </div>
+                <p>Skin prep</p>
+            </a>
+
+            <!-- FACE -->
+            <a href="face.html" class="category-card">
+                <div class="category-image">
+                    <img src="./fenty meik.png" alt="Face makeup">
+                </div>
+                <p>Face</p>
+            </a>
+
+            <!-- EYES -->
+            <a href="eyes.html" class="category-card">
+                <div class="category-image">
+                    <img src="./charlotte.png" alt="Eyeshadow">
+                </div>
+                <p>Eyes</p>
+            </a>
+
+            <!-- LIPS -->
+            <a href="lips.html" class="category-card">
+                <div class="category-image">
+                    <img src="./ysl varalitur.png" alt="Lipstick">
+                </div>
+                <p>Lips</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEP BY STEP -->
+    <section class="steps" id="steps">
+
+        <h2>Not sure where to start?</h2>
+        <p class="subtitle">Use our simple step by step guide.</p>
+
+        <div class="step-container">
+
+            <div class="step">
+                <div class="circle">1</div>
+                <h3>Skin</h3>
+                <p>Prep and hydrate<br>your skin.</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <div class="circle">2</div>
+                <h3>Base</h3>
+                <p>Foundation, concealer, bronzer<br>powder and blush.</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <div class="circle">3</div>
+                <h3>Eyes</h3>
+                <p>Eyeshadow, eyelashes and<br>eyebrows.</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <div class="circle">4</div>
+                <h3>Lips</h3>
+                <p>Lipliner, lipstick and<br>lipgloss.</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <div class="circle">5</div>
+                <h3>Finish</h3>
+                <p>Set your makeup and<br>make it last.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAKEUP MOOD -->
+    <section class="mood" id="mood">
+
+        <h2>What’s your makeup mood?</h2>
+
+        <div class="mood-grid">
+
+            <a href="looks.html#everyday-glow" class="mood-card">
+                <div class="mood-image">
+                    <img src="./glowy.png" alt="Everyday glow">
+                </div>
+                <p>Everyday glow</p>
+            </a>
+
+            <a href="looks.html#date-night" class="mood-card">
+                <div class="mood-image">
+                    <img src="./date.png" alt="Date night">
+                </div>
+                <p>Date night</p>
+            </a>
+
+            <a href="looks.html#rosy-look" class="mood-card">
+                <div class="mood-image">
+                    <img src="./rosy.png" alt="Rosy look">
+                </div>
+                <p>Rosy look</p>
+            </a>
+
+            <a href="looks.html#matte-glam" class="mood-card">
+                <div class="mood-image">
+                    <img src="./matte.png" alt="Matte glam">
+                </div>
+                <p>Matte glam</p>
+            </a>
+
+        </div>
+
+        <p class="copyright">© 2026 Bare Basics</p>
+
+    </section>
+
+</body>
+
+</html>
